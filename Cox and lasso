@@ -14,7 +14,7 @@ summary(km_fit)
 plot(km_fit,xlab = "Time in days",ylab = "Survival probability",main="Kaplan Meier Survival Curve")
 
 surv_object = Surv(time = data$Time_in_month, event = data$Status)
-#
+
 # Variables to test
 variables <- c("Age_Category","Sex","PST","Histology","Grade","Tumour","Nodal_Status","Metastasis_status","Stage","Treatment_Given_Prior_to_Registration_at_RI","Treatment_Given","Tobacco_chewing","smoking_habit","alcohol_consumption") # Replace with your variable names
 logrank_results <- data.frame(Variable = character(),
